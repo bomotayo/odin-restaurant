@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "SEGA";
+  src: url("../font/MR ROBOT.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+#nav-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 219, 156);
+  width: 100%;
+}
+
+#nav {
+  list-style-type: none;
+  display: flex;
+}
+.active {
+  color: white;
+}
+
+#nav > li {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+#nav > li:hover {
+  color: white;
+}
+
+#logo {
+  color: white;
+  font-family: "SEGA" !important;
+  margin-left: 5%;
+}
+
+/*Home*/
+.hero-img {
+  width: 100%;
+  height: 550px;
+}
+
+.hero-section {
+  color: black;
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  padding: 2%;
+  text-align: center;
+}
+
+.hero-title {
+  color: rgb(235, 219, 156);
+  font-size: 70px;
+}
+.hero-text {
+  color: rgb(235, 219, 156);
+  position: relative;
+  top: -40px;
+  font-size: 30px;
+}
+/*Menu*/
+.card {
+  border: 2px solid black;
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+}
+
+.card:hover {
+  background-color: rgb(235, 219, 156);
+}
+
+.menu-section {
+  text-align: center;
+  margin-top: 2%;
+}
+.lunch-section,
+.dinner-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5%;
+  width: 90%;
+  margin-left: 10%;
+}
+
+.meal-name {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.about-section {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+.about-section > h2 {
+  font-family: "SEGA";
+  font-weight: normal;
+}
+.contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.address-section {
+  text-align: center;
+  font-size: 20px;
+}
+.reserve-section {
+  background-color: rgb(235, 219, 156);
+  padding: 20px;
+}
+.reserve-section > h2 {
+  text-align: center;
+  background-color: rgb(235, 219, 156);
+}
+.user {
+  display: flex;
+}
+.user-det > input {
+  display: block;
+  margin-right: 20px;
+  width: 70%;
+  padding: 10px;
+}
+.email-input > input {
+  margin-top: 5%;
+  padding: 10px;
+  width: 90%;
+}
+
+#form-btn {
+  margin-top: 20px;
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  .topnav li {
+    display: none;
+  }
+  .topnav li.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #nav {
+    display: block;
+  }
+  /* #nav li:not(:last-child) {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+  #nav li:first-child {
+    margin-top: 30px;
+  } */
+
+  .topnav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+  #nav-section {
+    width: 100%;
+  }
+
+  .lunch-section,
+  .dinner-section {
+    display: block;
+    width: 100%;
+  }
+  .card {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .hero-section {
+    left: 50%;
+  }
+  .hero-img {
+    height: 590px;
+  }
+  .contact-section {
+    display: block;
+  }
+  .reserveSection {
+    width: 80%;
+  }
+  .user {
+    width: 80%;
+  }
+  .user-det {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-img {
+    width: 100%;
+    height: 700px;
+  }
+}
